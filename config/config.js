@@ -1,0 +1,8 @@
+require('dotenv').config();
+
+module.exports = {
+    BITRIX24_WEBHOOK_URL: process.env.BITRIX24_WEBHOOK_URL,
+    SMAPONE_API_URL: process.env.SMAPONE_API_URL,
+    SMAPONE_API_KEY: process.env.SMAPONE_API_TOKEN,
+    SMAPONE_REQ_DATASOURCE_ALLLISTS_META: process.env.SMAPONE_REQ_DATASOURCE_ALLLISTS_META
+};

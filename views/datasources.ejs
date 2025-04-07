@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data sources from SmapOne</title>
+</head>
+<body>
+  <h1>Available Tables</h1>
+
+  <% if (dataSources.length > 0) { %>
+    <ul>
+      <% dataSource.dorEach(function(dataSource) { %>
+        <li>
+          <strong><%= dataSource.name %></strong> - ID: <%= dataSource.dataSourceId %>
+        </li>  
+      <% }) %>
+    </ul>
+  <% } else {%>
+    <p>Table not found</p>
+  <% } %>
+</body>
+</html>
