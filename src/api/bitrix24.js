@@ -1,5 +1,5 @@
 const axios = require('axios');
-const {BITRIX_WEBHOOK_URL} = require('../../config/config.js');
+const {BITRIX24_WEBHOOK_URL} = require('../../config/config.js');
 
 // Create an Axios instance for Bitrix24
 const bitrix24API = axios.create({

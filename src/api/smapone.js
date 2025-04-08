@@ -5,7 +5,7 @@ const getAllDataSources = async () => {
   try {
     const response = await axios.get('https://platform.smapone.com/Backend/intern/DataSource?accessToken=452ab15f3aec793473ef4395c02752c055031102', {
       headers: {
-        Authorization: `ApiKey ${SMAPONE_API_KEY}`,
+        // Authorization: `ApiKey ${SMAPONE_API_KEY}`,
         'Accept': 'application/json'
       },
     });
